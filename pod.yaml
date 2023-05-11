@@ -7,10 +7,10 @@ metadata:
     app: nginx
 spec:
   containers:
-    - image: ngin
+    - image: alpine
       name: mikey-cont
-      ports:
-        - containerPort: 80
-          protocol: TCP
+      command:
+        - sleep
+        - "2s"   
   restartPolicy: Never
 
