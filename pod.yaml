@@ -1,1 +1,15 @@
-hii
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mikey-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+    - image: nginx
+      name: mikey-cont
+      ports:
+        - containerPort: 80
+          protocol: TCP
+
