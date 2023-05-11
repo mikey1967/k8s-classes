@@ -11,6 +11,6 @@ spec:
       name: mikey-cont
       command:
         - sleep
-        - "2s"   
-  restartPolicy: Never
+        - "10s"   
+  restartPolicy: Always
 
