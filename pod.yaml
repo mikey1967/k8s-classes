@@ -8,6 +8,7 @@ metadata:
 spec:
   initContainers: 
     - image: alpine
+      name: mikey-init
       command:
         - sleep
         - 30s
