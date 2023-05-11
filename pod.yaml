@@ -6,6 +6,11 @@ metadata:
   labels:
     app: nginx
 spec:
+  initContainers: 
+    - image: alpine
+      command:
+        - sleep
+        - 30s
   containers:
     - image: alpine
       name: mikey-cont
