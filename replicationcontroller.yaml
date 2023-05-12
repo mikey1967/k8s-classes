@@ -5,7 +5,7 @@ metadata:
   labels:
     app: jenkins
 spec:
-  minReadySeconds: 20
+  minReadySeconds: 3
   replicas: 5
   selector: 
     app: jenkins
