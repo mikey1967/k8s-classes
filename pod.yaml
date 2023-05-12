@@ -2,21 +2,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mikey-pod
   labels:
-    app: nginx
+    app: jenkins
 spec:
-  initContainers: 
-    - image: alpine
-      name: mikey-init
-      command:
-        - sleep
-        - 30s
   containers:
-    - image: alpine
-      name: mikey-cont
-      command:
-        - sleep
-        - "10s"   
-  restartPolicy: Always
-
+    - name: mikey-cont
+      image: jenkins
+      ports:
+        - containerPort: 8080
+          protocol: TCP
