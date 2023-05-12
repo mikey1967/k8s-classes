@@ -13,7 +13,7 @@ spec:
     metadata:
       name: mikey-pod1
       labels:
-        app: nginx
+        app: jenkins
     spec:
       containers:
         - name: mikey-jenkinscont
