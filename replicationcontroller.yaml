@@ -27,13 +27,13 @@ kind: Service
 metadata:
   name: mikey-svc
   labels:
-    app: mikey
+    app: jenkins
 spec:
   ports:
     - targetPort: 80
       port: 35000
   selector:
-    app: mikey
+    app: jenkins
   type: ClusterIP
       
   
