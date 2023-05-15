@@ -27,7 +27,7 @@ kind: Service
 metadata:
   name: mikey-svc1
   labels:
-    app: jenkins
+    app: mikey
 spec:
   ports:
     - targetPort: 80
