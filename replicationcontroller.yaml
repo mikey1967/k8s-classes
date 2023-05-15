@@ -30,7 +30,7 @@ metadata:
     app: jenkins
 spec:
   ports:
-    - targetPort: 80
+    - targetPort: 8080
       port: 35000
   selector:
     app: jenkins
