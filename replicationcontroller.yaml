@@ -33,7 +33,7 @@ spec:
     - targetPort: 8080
       port: 35000
   selector:
-    app: mikey
+    app: jenkins
   type: NodePort
       
   
