@@ -27,13 +27,13 @@ kind: Service
 metadata:
   name: mikey-svc1
   labels:
-    app: jenkins
+    app: mikey
 spec:
   ports:
     - targetPort: 8080
       port: 35000
   selector:
-    app: jenkins
+    app: mikey
   type: NodePort
       
   
